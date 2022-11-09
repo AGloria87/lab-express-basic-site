@@ -1,3 +1,15 @@
+/*
+COLORS
+background color: #483D8B
+text color: #D9B775
+darker font (?): #8C7445
+accent choices:
+lighter: #B6D94A
+darker: #788C37
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +17,95 @@
 }
 
 html {
-    background-color: sandybrown;
-    color: darkslateblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20pt;
+    font-weight: lighter;
+    color: #D9B775;
+    height: 100%;
+    background-image: linear-gradient(darkslateblue, black);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, a {
+    font-family: 'Rubik Dirt', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #D9B775;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 5vh 0;
 }
 
 .content {
-    width: 90vw;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    margin: auto;
+    padding: 1vh 4vh;
+    border: 5px #D9B775;
+}
+
+#home-pic {
+    width: 50%;
+    margin: 2.5%;
+}
+
+#home-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#home-links a {
+    margin: 0 6vw;
+}
+
+.about section {
+    margin: 0 10%;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+
+.about section > img {
+    margin: 2%;
+}
+
+#img-solo {
+    height: 40vh;
+}
+
+#img-band {
+    width: 25vw;
+}
+
+#albums {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#albums iframe {
+    border: 0;
+    width: 350px;
+    height: 470px;
+    margin: 0 0.4em;
+}
+
+.back {
+    background-color: #788C37;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 8px;
 }
