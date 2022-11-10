@@ -28,7 +28,7 @@ html {
     background-attachment: fixed;
 }
 
-h1, a {
+h1, h3, a {
     font-family: 'Rubik Dirt', cursive;
 }
 
@@ -101,6 +101,43 @@ p {
     width: 350px;
     height: 470px;
     margin: 0 0.4em;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 5vh 0;
+}
+
+.gallery-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.gallery li {
+    margin: 0.4em;
+}
+
+figure img {
+    width: 50vh;
+    height: 50vh;
+    object-fit: contain;
+}
+
+.double {
+    width: 100vh;
+    height: 50vh;
+    object-fit: contain;
+}
+
+figure figcaption {
+    font-size: 0.7em;
 }
 
 .back {
